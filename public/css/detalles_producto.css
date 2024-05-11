@@ -1,0 +1,31 @@
+body {
+    background-image: url('../../public/images/wall2.jpg');
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    max-width: 400px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+li {
+    padding: 10px;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4c0a6b;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+a:hover {
+    background-color: #9436ff;
+}

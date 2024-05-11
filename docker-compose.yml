@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: sistema_productos
+
+  php:
+    image: php:apache
+    ports:
+      - "8080:80"
+    volumes:
+      - C:\xampp\htdocs\Practica6ExamenPractico:/var/www/html
+    depends_on:
+      - db
